@@ -1,24 +1,68 @@
-import logo from './logo.svg';
-import './App.css';
 
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Navbar from './components/pages/Navbar/Navbars';
+import Home from './components/pages/Home/Home';
+import Login from './components/pages/Login/Login';
+import Register from './components/pages/Register/Register';
+ import AddAdventures from './components/pages/AddAdventures/AddAdventures';
+ import AuthProvider from "./components/AuthProvider/AuthProvider";
+import NotFound from "./components/NotFound/NotFound";
+import Adventures from "./components/pages/AllAdventures/Adventures";
+import AdventuresBooking from "./components/pages/AllAdventures/AdventuresBooking";
+import Profile from "./components/pages/Profile/Profile";
+import Admin from "./components/pages/Admin/Admin";
+import PrivateRoute from "./components/pages/Navbar/PrivateRoute";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <AuthProvider>
+      <Router>
+    <div>
+      <Navbar></Navbar>
+      
+      {/* A <Switch> looks through its children <Route>s and
+          renders the first one that matches the current URL. */}
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/Home">
+          <Home></Home>
+        </Route>
+        <Route path="/Login">
+             <Login /> 
+          </Route>
+          <Route path="/Register">
+             <Register /> 
+         </Route>
+          <PrivateRoute  path="/AddAdventures">
+             <AddAdventures /> 
+         </PrivateRoute>
+          <PrivateRoute path="/Adventures">
+             <Adventures /> 
+         </PrivateRoute>
+          <PrivateRoute path="/Profile">
+             <Profile /> 
+         </PrivateRoute>
+         <PrivateRoute path="/AdventuresBooking/:bookingid">
+             <AdventuresBooking /> 
+          </PrivateRoute>
+         <PrivateRoute path="/Admin">
+             <Admin /> 
+          </PrivateRoute>
+          
+         
+          <Route path="*">
+          <NotFound></NotFound>
+        </Route>
+      </Switch>
     </div>
+  </Router>
+   </AuthProvider>
   );
 }
 

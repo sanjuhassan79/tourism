@@ -1,0 +1,46 @@
+
+.services {
+    padding: 60px 0px;
+    text-align: center;
+ }
+ .section-title {
+    margin: 0;
+    padding-bottom: 50px;
+ }
+ .section-title p {
+    max-width: 800px;
+    margin: auto;
+ }
+ .service-thumb {
+    margin-bottom: 30px;
+    margin-top: 20px;
+ }
+  .service-thumb h4 {
+    color: #000;
+ }
+ 
+ 
+ .service-thumb .thumb-icon {
+    /* background: #e48e78; */
+    background: #152F4F;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px 0;
+    line-height: 60px;
+    margin: 0 auto 20px auto;
+    transition: ease-in-out 0.3s;
+   
+ }
+ .service-thumb:hover .thumb-icon {
+    background: #35203b;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border-radius: 0 20px;
+    
+ }
+ .services .fas {
+    font-size: 25px;
+    padding-top: 14px;
+ }
+ 

@@ -1,0 +1,27 @@
+.avatat{
+    height: 100vh;
+}
+img.img-thumbnail {
+    width: 150px;
+    border-radius: 50%;
+}
+.avata__item {
+    text-align: center;
+}
+.icon {
+    color: #7b10dd;
+    font-size: 20px;
+}
+.avata__title h4 {
+    color: #7b10dd;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.bg__color {
+    background-image:linear-gradient(to right, #35203b, rgba(150, 60, 75, 0.438)), url('http://smartdemowp.com/travio/wp-content/uploads/2021/02/video-1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+    
+}

@@ -1,0 +1,47 @@
+[
+    {
+        
+        "name": "Moscow Red City Land",
+        "description": "Isha Vidhya's English-medium schools provide high quality school education to rural children in India who cannot otherwise access or afford",
+        "img": "https://smartdemowp.com/travio/wp-content/uploads/2021/03/page-title-3.jpg",
+        "person":"/ Per person",
+        "price":"170"
+
+    },
+    {
+        
+        "name": "Great Wall of China",
+        "description": "The Chinese were already familiar with the techniques of wall-building by the time of the Spring and Autumn period between the 8th and 5th centuries BC.[21] During this time and the subsequent Warring States period, the states of Qin, Wei, Zhao, Qi, Han, Yan, and Zhongshan[22][23] all constructed extensive fortifications to defend their own borders. Built to withstand the attack of small arms such as swords and spears, these walls were made mostly of stone or by stamping earth and gravel between board frames.",
+        "img": "https://i.ibb.co/30SGw1x/De-Chinese-Muur.jpg",
+        "person":"/ Per person",
+        "price":"90"
+    },
+    {
+        "name": "Lake Baikal Russia",
+        "description": "Baikal's age is estimated at 25–30 million years, making it the most ancient lake in geological history.[10][11] It is unique among large, high-latitude lakes, as its sediments have not been scoured by overriding continental ice sheets. Russian, U.S., and Japanese cooperative studies of deep-drilling core sediments in the 1990s provide a detailed record of climatic variation over the past 6.7 million years.[19][20] Longer and deeper sediment cores are expected in the near future. Lake Baikal is the only confined freshwater lake in which direct and indirect evidence of gas hydrates exists",
+        "img": "https://i.ibb.co/mT7X3Bg/Lake-Baikal-1.jpg",
+        "person":"/ Per person",
+        "price":"270"
+    },
+    {
+        "name": "Great Barrier Reef Australia",
+        "description": "A March 2016 report stated that coral bleaching was more widespread than previously thought, seriously affecting the northern parts of the reef as a result of warming ocean temperatures.[16] In October 2016, Outside published an obituary for the reef;[17] the article was criticized for being premature and hindering efforts to bolster the resilience of the reef.[18] In March 2017, the journal Nature published a paper showing that huge sections of an 800-kilometre (500 mi) stretch in the northern part of the reef had died in the course of 2016 due to high water temperatures, an event that the authors put down to the effects of global climate change.[19] The percentage of baby corals being born on the Great Barrier",
+        "img": "https://i.ibb.co/JKK4Y9h/Getty-Images-150968209.jpg",
+        "person":"/ Per person",
+        "price":"180"
+    },
+    {
+        "name": "Sydney Opera House Australia",
+        "description": "The building comprises multiple performance venues, which together host well over 1,500 performances annually, attended by more than 1.2 million people.[6] Performances are presented by numerous performing artists, including three resident companies: Opera Australia, the Sydney Theatre Company and the Sydney Symphony Orchestra. As one of the most popular visitor attractions in Australia, the site is visited by more than eight million people annually, and approximately 350,000 visitors take a guided tour of the building each year.[7] The building is managed by the Sydney Opera House Trust, an agency of the New South Wales State Government.",
+        "img": "https://i.ibb.co/bryGqps/download.jpg",
+        "person":"/ Per person",
+        "price":"140"
+    },
+    {
+        "name": "Uluru  Australia",
+        "description": "he sandstone formation stands 348 m (1,142 ft) high, rising 863 m (2,831 ft) above sea level with most of its bulk lying underground, and has a total perimeter of 9.4 km (5.8 mi).[5] Both Uluru and the nearby Kata Tjuta formation have great cultural significance for the local Aṉangu people, the traditional inhabitants of the area, who lead walking tours to inform visitors about the bush, food, local flora and fauna, and the Aboriginal dreamtime stories of the area.",
+        "img": "https://i.ibb.co/4SbRP6s/maxresdefault.jpg",
+        "person":"/ Per person",
+        "price":"190"
+    }
+]
