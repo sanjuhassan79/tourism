@@ -14,7 +14,7 @@ const[booking,setbooking]=useState({})
 useEffect(() => {
     
     
-    fetch(`http://localhost:5000/Adventures/${bookingid}`)
+    fetch(`https://secure-sierra-15746.herokuapp.com/Adventures/${bookingid}`)
     .then(res=>res.json())
     .then(data=>setbooking(data))
 }, []);
@@ -27,16 +27,8 @@ const { register, handleSubmit,reset, formState: { errors } } = useForm();
     data.img=booking.img;
     data.travelName=booking.name
     data.status ="pending"
-    axios.post('http://localhost:5000/users',data)
-//     fetch('http://localhost:5000/users',{
+    axios.post('https://secure-sierra-15746.herokuapp.com/users',data)
 
-//     method:"POST",
-//     headers:{
-//         "content-type":"application/json"
-//     },
-//     body:JSON.stringify(data)
-
-//  })
  
  .then(res=>{
     if(res.data.insertedId){

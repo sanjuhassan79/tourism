@@ -13,7 +13,7 @@ const GroupTravel = () => {
                 <h4 className='content-box'>Group Travel to New Zealand</h4>
                 <span className="price">$150</span><del>$300</del>
                     <p className="Travel__subtitle">Lorem ipsum dolor amet consectetur adipiscing sed do eiusmod tempor ux incidunt labore dolore magna aliqua Quis ipsum suspen. bgbd</p>
-                    <button type="button" class="btn btn-outline-danger">Booking here</button>
+                    <button type="button" className="btn btn-outline-danger">Booking here</button>
             </div>
 
             </div>

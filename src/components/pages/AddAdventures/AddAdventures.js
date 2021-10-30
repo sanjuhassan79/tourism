@@ -8,20 +8,12 @@ const AddEvent = () => {
     const {user}=useAuth()
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data =>{
-    //   console.log(data);
+    
       data.email=user.email
 
-axios.post('http://localhost:5000/Adventures',data)
+axios.post('https://secure-sierra-15746.herokuapp.com/Adventures',data)
 
-    //    fetch('http://localhost:5000/Adventures',{
-
-    //     method:"POST",
-    //     headers:{
-    //         "content-type":"application/json"
-    //     },
-    //     body:JSON.stringify(data)
     
-    //  })
      
      .then(res=>{
           

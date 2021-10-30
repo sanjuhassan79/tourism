@@ -5,12 +5,12 @@ import { Table,Button } from 'react-bootstrap';
 const Admin = () => {
 
 const [user,setuser]=useState([])
-// const [userT,setuserT]=useState([])
+
 const [isDelete,setisDelete]=useState(null)
-// const status=""
+
 
 useEffect(() => {
-    fetch('http://localhost:5000/users')
+    fetch('https://secure-sierra-15746.herokuapp.com/users')
     .then(res=>res.json())
     .then(data=>setuser(data))
 }, [user,isDelete]);
@@ -18,7 +18,7 @@ useEffect(() => {
 const handleDelete=(id)=>{
 
 console.log(id);
-fetch(`http://localhost:5000/users/${id}`,{
+fetch(`https://secure-sierra-15746.herokuapp.com/users/${id}`,{
 
 method:"DELETE",
 headers:{"content-type":"application/json"}
@@ -39,8 +39,8 @@ headers:{"content-type":"application/json"}
 }
 
 const handleStatus=id=>{
-  // setuserT(status)
-fetch(`http://localhost:5000/users/${id}`,{
+  
+fetch(`https://secure-sierra-15746.herokuapp.com/users/${id}`,{
 
 method:"PUT",
 headers:{"content-type":"application/json"},

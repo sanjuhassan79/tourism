@@ -13,7 +13,7 @@ const email=user.email
     const [isDelete,setisDelete]=useState(null)
 console.log(addEvents[0]?.name);
     useEffect(() => {
-       fetch(`http://localhost:5000/users/${email}`)
+       fetch(`https://secure-sierra-15746.herokuapp.com/users/${email}`)
        .then(res=>res.json())
        .then(data=>{
            
@@ -29,7 +29,7 @@ const handleDelete=id=>{
 
 
     console.log(id);
-    fetch(`http://localhost:5000/users/${id}`,{
+    fetch(`https://secure-sierra-15746.herokuapp.com/users/${id}`,{
     
     method:"DELETE",
      

@@ -3,18 +3,18 @@ import { useState,useEffect } from 'react';
 import { Container,Row } from 'react-bootstrap';
 import './Adventures.css'
 import Adventuresitem from './Adventuresitem';
-// import Adventuresitem from '../AllvolunteerItem/Adventuresitem';
+
 const Adventures = () => {
 
 const [Adventures,setAdventures]=useState([])
 
 useEffect(() => {
-   fetch('http://localhost:5000/Adventures')
+   fetch('https://secure-sierra-15746.herokuapp.com/Adventures')
    .then(res=>res.json())
    .then(data=>setAdventures(data))
 }, []);
 
-// console.log(volunteer);
+
 
 
 
