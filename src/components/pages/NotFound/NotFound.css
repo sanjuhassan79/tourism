@@ -1,0 +1,15 @@
+.Found__item{
+    background-image:linear-gradient(to right, #35203b91, rgba(150, 60, 75, 0.075)), url('https://i.ibb.co/9stdVgp/404.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* position:fixed; */
+    margin-top: 4
+rem
+;
+    
+}

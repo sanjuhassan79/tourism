@@ -27,9 +27,7 @@ const handleGoogleLogin=()=>{
             <div className="container-fluid">
       <div className="row">
         <div className="col-sm-6 col-md-7 intro-section">
-          <div className="brand-wrapper">
-            <h1>Logo</h1>
-          </div>
+          
           <div className="intro-content-wrapper">
             <h1 className="intro-title">Welcome to website !</h1>
             <p className="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

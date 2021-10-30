@@ -1,4 +1,5 @@
 import React from 'react';
+import { Navbar } from 'react-bootstrap';
 
 import { Link,useLocation,useHistory } from 'react-router-dom';
 import useAuth from '../../hook/useAuth';
@@ -24,14 +25,11 @@ const handleGoogleLogin=()=>{
         <div className="container-fluid">
       <div className="row">
         <div className="col-sm-6 col-md-7 intro-section">
-          <div className="brand-wrapper">
-            <h1>Logo</h1>
-          </div>
+         
           <div className="intro-content-wrapper">
             <h1 className="intro-title">Welcome to website !</h1>
-            <p className="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna</p>
-            <a href="#!" className="btn btn-read-more">Read more</a>
+            <p className="intro-text"> people still occasionally use the words travail, which means struggle. According to Simon Winchester in his book The Best Travelers' Tales (2004), the words travel and travail both share an even more ancient root: a Roman instrument of torture called the tripalium (in Latin it means "three stakes", as in to impale). This link may reflect the extreme difficulty of travel in ancient times.</p>
+            
           </div>
           <div className="intro-section-footer">
             <div className="footer-nav">

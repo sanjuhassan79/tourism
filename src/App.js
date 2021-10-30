@@ -11,7 +11,7 @@ import Login from './components/pages/Login/Login';
 import Register from './components/pages/Register/Register';
  import AddAdventures from './components/pages/AddAdventures/AddAdventures';
  import AuthProvider from "./components/AuthProvider/AuthProvider";
-import NotFound from "./components/NotFound/NotFound";
+import NotFound from "./components/pages/NotFound/NotFound";
 import Adventures from "./components/pages/AllAdventures/Adventures";
 import AdventuresBooking from "./components/pages/AllAdventures/AdventuresBooking";
 import Profile from "./components/pages/Profile/Profile";
