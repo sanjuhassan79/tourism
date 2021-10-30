@@ -10,7 +10,7 @@ const AddEvent = () => {
       console.log(data);
       data.email=user.email
 
-       fetch('http://localhost:5000/Adventures',{
+       fetch('https://secure-sierra-15746.herokuapp.com/Adventures',{
 
         method:"POST",
         headers:{

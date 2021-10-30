@@ -8,7 +8,7 @@ const [user,setuser]=useState([])
 const [isDelete,setisDelete]=useState(null)
 
 useEffect(() => {
-    fetch('http://localhost:5000/users')
+    fetch('https://secure-sierra-15746.herokuapp.com/users')
     .then(res=>res.json())
     .then(data=>setuser(data))
 }, [isDelete]);
@@ -16,15 +16,18 @@ useEffect(() => {
 const handleDelete=(id)=>{
 
 console.log(id);
-fetch(`http://localhost:5000/users/${id}`,{
+fetch(`https://secure-sierra-15746.herokuapp.com/users/${id}`,{
 
 method:"DELETE",
 headers:{"content-type":"application/json"}
 })
 .then(res=>res.json())
 .then(dataitem=>{
-    if(dataitem.deleteCount){
-        setisDelete(true)
+    if(dataitem.deleteCount>0 ||dataitem.acknowledged === true){
+      setisDelete(true)
+      alert('Deleted succesfully')
+        const remainingUser= user.filter(users=>users._id !==id)
+        setuser(remainingUser)
     }else{
         setisDelete(false)  
     }

@@ -13,7 +13,7 @@ const[booking,setbooking]=useState({})
 useEffect(() => {
     
     
-    fetch(`http://localhost:5000/Adventures/${bookingid}`)
+    fetch(`https://secure-sierra-15746.herokuapp.com/Adventures/${bookingid}`)
     .then(res=>res.json())
     .then(data=>setbooking(data))
 }, []);
@@ -26,7 +26,7 @@ const { register, handleSubmit, formState: { errors } } = useForm();
     data.img=booking.img;
     data.travelName=booking.name
 
-    fetch('http://localhost:5000/users',{
+    fetch('https://secure-sierra-15746.herokuapp.com/users',{
 
     method:"POST",
     headers:{

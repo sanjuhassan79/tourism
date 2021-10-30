@@ -9,7 +9,7 @@ const Adventures = () => {
 const [Adventures,setAdventures]=useState([])
 
 useEffect(() => {
-   fetch('http://localhost:5000/Adventures')
+   fetch('https://secure-sierra-15746.herokuapp.com/Adventures')
    .then(res=>res.json())
    .then(data=>setAdventures(data))
 }, []);
