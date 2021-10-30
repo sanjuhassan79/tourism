@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import logo from '../../asste/logo.png'
+
 import useAuth from '../../hook/useAuth';
 import './Navbar.css'
 const Navbars = () => {
@@ -9,9 +9,9 @@ const Navbars = () => {
   const{user,logOut}=useAuth()
     return (
         <div>
-        <Navbar sticky="top" collapseOnSelect expand="lg" className="top-nav py-3">
+        <Navbar fixed="top" collapseOnSelect expand="lg" className="top-nav py-3">
           <div className="container">
-         <Navbar.Brand  href="#home"><img className="logow" src={logo} alt="logo" /></Navbar.Brand> 
+         <Navbar.Brand  href="#home"><img className="logow" src='https://www.pinclipart.com/picdir/big/368-3684726_egypt-clipart-oasis-sri-lanka-travel-agency-logo.png' alt="logo" /></Navbar.Brand> 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav" className="menu-list">
             <Nav >
@@ -25,7 +25,7 @@ const Navbars = () => {
                 <Link className="navLink" to="/Admin">Admin</Link>
                 <Link className="navLink" to="/Profile">Profile</Link>
               <Link className="navLink" to="/AddAdventures">AddAdventures</Link>
-                <span>{user?.email.slice(0,10)}</span>
+                <span className="mavName">{user?.email.slice(0,10)}</span>
                 <Link onClick={logOut} className="navLink" to="/"><span className="sinItem">Log out</span></Link>
                 
               </div>

@@ -5,6 +5,12 @@ const Services = () => {
      
 <section className="services">
    <div className="container">
+
+   <div className="Adventures mb-5">
+     <h4>TRAVIO SPECIALS</h4>
+     <h2>Why Travel with Tutive?</h2>
+
+   </div>
     
       <div className="row">
          <div className="col-md-3 shadow-sm">

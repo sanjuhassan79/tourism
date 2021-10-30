@@ -4,6 +4,7 @@ import { useParams } from 'react-router';
 import { useForm } from "react-hook-form";
 import './AdventuresBooking.css'
 import useAuth from '../../hook/useAuth';
+import axios from 'axios';
 
 const AdventuresBooking = () => {
 const {user}=useAuth()
@@ -13,30 +14,39 @@ const[booking,setbooking]=useState({})
 useEffect(() => {
     
     
-    fetch(`https://secure-sierra-15746.herokuapp.com/Adventures/${bookingid}`)
+    fetch(`http://localhost:5000/Adventures/${bookingid}`)
     .then(res=>res.json())
     .then(data=>setbooking(data))
 }, []);
 
 // console.log(Valunt);
-const { register, handleSubmit, formState: { errors } } = useForm();
+const { register, handleSubmit,reset, formState: { errors } } = useForm();
   const onSubmit = data =>{
     console.log(data)
     data.email=user.email;
     data.img=booking.img;
     data.travelName=booking.name
+    data.status ="pending"
+    axios.post('http://localhost:5000/users',data)
+//     fetch('http://localhost:5000/users',{
 
-    fetch('https://secure-sierra-15746.herokuapp.com/users',{
+//     method:"POST",
+//     headers:{
+//         "content-type":"application/json"
+//     },
+//     body:JSON.stringify(data)
 
-    method:"POST",
-    headers:{
-        "content-type":"application/json"
-    },
-    body:JSON.stringify(data)
+//  })
+ 
+ .then(res=>{
+    if(res.data.insertedId){
+
+        alert('added successfully')
+        reset()
+     }
+
 
  })
- .then(res=>res.json())
- .then(data=>console.log(data))
 
   };
 

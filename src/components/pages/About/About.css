@@ -1,0 +1,32 @@
+.list {
+    position: relative;
+    margin-bottom: 32px;
+    list-style: none;
+}
+.might-mar {
+    color: #194a5b;
+    margin-right: 0.5rem;
+}
+.sec-title h6 {
+    position: relative;
+    display: block;
+    font-size: 17px;
+    line-height: 28px;
+    color: gray;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.sec-title h2 {
+    position: relative;
+    display: block;
+    font-size: 50px;
+    line-height: 60px;
+    font-family: playfair display,serif;
+    font-weight: 900;
+}
+.sec-title p{
+    color: gray;
+    font-weight: 400;
+    margin: 10px 0;
+}

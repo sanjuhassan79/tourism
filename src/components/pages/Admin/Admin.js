@@ -5,18 +5,20 @@ import { Table,Button } from 'react-bootstrap';
 const Admin = () => {
 
 const [user,setuser]=useState([])
+// const [userT,setuserT]=useState([])
 const [isDelete,setisDelete]=useState(null)
+// const status=""
 
 useEffect(() => {
-    fetch('https://secure-sierra-15746.herokuapp.com/users')
+    fetch('http://localhost:5000/users')
     .then(res=>res.json())
     .then(data=>setuser(data))
-}, [isDelete]);
+}, [user,isDelete]);
 
 const handleDelete=(id)=>{
 
 console.log(id);
-fetch(`https://secure-sierra-15746.herokuapp.com/users/${id}`,{
+fetch(`http://localhost:5000/users/${id}`,{
 
 method:"DELETE",
 headers:{"content-type":"application/json"}
@@ -36,6 +38,27 @@ headers:{"content-type":"application/json"}
 
 }
 
+const handleStatus=id=>{
+  // setuserT(status)
+fetch(`http://localhost:5000/users/${id}`,{
+
+method:"PUT",
+headers:{"content-type":"application/json"},
+body:JSON.stringify({
+  status:"approved"
+})
+})
+
+.then(res=>res.json())
+.then(data=>{
+  console.log(data)
+})
+
+
+
+
+}
+
     return (
         <div>
             <Table striped bordered hover variant="dark">
@@ -45,19 +68,20 @@ headers:{"content-type":"application/json"}
       <th>Name</th>
       <th>Email ID</th>
       <th>Registating date</th>
-      <th>Volunteer List</th>
+      <th>status</th>
       <th>Action</th>
     </tr>
   </thead>
   <tbody>
     {
-        user.map(users=><tr
+        user?.map(users=><tr
         key={users._id}>
            
             <td>{users.name}</td>
             <td>{users.email}</td>
             <td>{users.date}</td>
-            <td>{users.description}</td>
+            <td><button onClick={()=>handleStatus(users._id)}>{users.status}</button></td>
+           
             <td><Button onClick={()=>handleDelete(users._id)} variant="danger">Cancel</Button></td>
           </tr>
           

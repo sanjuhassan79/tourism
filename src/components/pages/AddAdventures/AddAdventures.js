@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
 import useAuth from '../../hook/useAuth';
@@ -7,20 +8,31 @@ const AddEvent = () => {
     const {user}=useAuth()
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data =>{
-      console.log(data);
+    //   console.log(data);
       data.email=user.email
 
-       fetch('https://secure-sierra-15746.herokuapp.com/Adventures',{
+axios.post('http://localhost:5000/Adventures',data)
 
-        method:"POST",
-        headers:{
-            "content-type":"application/json"
-        },
-        body:JSON.stringify(data)
+    //    fetch('http://localhost:5000/Adventures',{
+
+    //     method:"POST",
+    //     headers:{
+    //         "content-type":"application/json"
+    //     },
+    //     body:JSON.stringify(data)
     
-     })
-     .then(res=>res.json())
-     .then(data=>console.log(data))
+    //  })
+     
+     .then(res=>{
+          
+       
+        // reset()
+        if(res.data.insertedId){
+
+            alert('added successfully')
+            console.log(res)
+             }
+    })
     
      }
       
@@ -80,7 +92,7 @@ const AddEvent = () => {
                     <label htmlFor="name">Your Description</label>
                     <br />
                     <div className="input-group">
-                    <textarea id="name" defaultValue='hgjhg' {...register("description")} placeholder="Enter Your Description"></textarea>
+                    <textarea id="name" {...register("description")} placeholder="Enter Your Description"></textarea>
                     
                     </div>
                 </div>

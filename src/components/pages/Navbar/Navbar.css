@@ -1,7 +1,6 @@
 .top-nav {
-    background: linear-gradient(to right, #f7f3f3, #ddd9d9);
-   
-  }
+  background: linear-gradient(to right, #7c88ba, #d5a4a8);
+}
   .top-nav .nav-link {
     color: white !important;
   }
@@ -18,7 +17,7 @@
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
-    color: black;
+    color: white;
     padding: 0 10px;
 }
   .top-nav .menu-list {
@@ -27,7 +26,9 @@
   .top-nav .navbar-brand {
     float: left;
   }
-  
+  .mavName {
+    color: #152f4f;
+}
   .navbar .dropdown-menu a:hover {
     color: #616161 !important;
   }
@@ -36,8 +37,8 @@
     color: #2e2e2e;
   }
   .sinItem {
-    background: #f3ce53;
+    background: #7f8cb9;
     padding: 4px 9px;
     border-radius: 5px;
-    color: black;
+    color: white;
 }
