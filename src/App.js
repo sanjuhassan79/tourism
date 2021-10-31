@@ -17,6 +17,9 @@ import AdventuresBooking from "./components/pages/AllAdventures/AdventuresBookin
 import MyOrders from "./components/pages/MyOrders/MyOrders";
 import ManageAllOrders from "./components/pages/ManageAllOrders/ManageAllOrders";
 import PrivateRoute from "./components/pages/Navbar/PrivateRoute";
+import About from "./components/pages/About/About";
+import Contact from "./components/pages/Contact/Contact";
+import Footer from "./components/pages/Footer/Footer";
 
 
 
@@ -36,6 +39,12 @@ function App() {
         </Route>
         <Route path="/Home">
           <Home></Home>
+        </Route>
+        <Route path="/About">
+          <About></About>
+        </Route>
+        <Route path="/Contact">
+          <Contact></Contact>
         </Route>
         <Route path="/Login">
              <Login /> 
@@ -64,6 +73,7 @@ function App() {
           <NotFound></NotFound>
         </Route>
       </Switch>
+      <Footer></Footer>
     </div>
   </Router>
    </AuthProvider>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState,useEffect } from 'react';
 import { Table,Button } from 'react-bootstrap';
-
+import './ManageAllOrders.css'
 const ManageAllOrders = () => {
 
 const [user,setuser]=useState([])
@@ -60,7 +60,7 @@ body:JSON.stringify({
 }
 
     return (
-        <div>
+        <div className="h-100">
             <Table responsive striped bordered hover variant="dark">
   <thead>
     <tr>

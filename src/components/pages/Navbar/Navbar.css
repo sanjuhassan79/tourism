@@ -42,7 +42,7 @@
     border-radius: 5px;
     color: white;
 }
-@media (max-width: 540px) {
+@media (max-width: 972px) {
   .Nav__res {
     display: flex;
     flex-direction: column;

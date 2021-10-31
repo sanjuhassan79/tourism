@@ -20,6 +20,8 @@ const Navbars = () => {
             <Nav >
     
               <Link className="navLink navLink__res" to="/">Home</Link>
+              <Link className="navLink navLink__res" to="/About">About</Link>
+              <Link className="navLink navLink__res" to="/Contact">Contact</Link>
               
               
               
