@@ -27,7 +27,7 @@ headers:{"content-type":"application/json"}
 .then(dataitem=>{
     if(dataitem.deleteCount>0 ||dataitem.acknowledged === true){
       setisDelete(true)
-      alert('Deleted succesfully')
+      alert('Are you sure delete your order')
         const remainingUser= user.filter(users=>users._id !==id)
         setuser(remainingUser)
     }else{

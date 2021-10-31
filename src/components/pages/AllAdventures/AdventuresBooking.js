@@ -33,7 +33,7 @@ const { register, handleSubmit,reset, formState: { errors } } = useForm();
  .then(res=>{
     if(res.data.insertedId){
 
-        alert('added successfully')
+        alert('Are you sure delete your order')
         reset()
      }
 
