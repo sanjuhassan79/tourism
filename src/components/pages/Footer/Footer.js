@@ -7,7 +7,7 @@ const Footer = () => {
 <div className="container">
   <div className="row">
     <div className="col-lg-5 col-xs-12 about-company">
-      <h2>Heading</h2>
+    <img className="logowr" src='https://www.pinclipart.com/picdir/big/368-3684726_egypt-clipart-oasis-sri-lanka-travel-agency-logo.png' alt="logo" />
       <p className="pr-5 text-white-50">Because of security concerns U.S. government employees in Bangladesh are subject to movement and travel restrictions. The U.S. government may have limited  </p>
       <p><Link to="#"><i className="fab fa-facebook-square mr-2"></i></Link><Link to="#"><i className="fab fa-linkedin"></i></Link></p>
     </div>
