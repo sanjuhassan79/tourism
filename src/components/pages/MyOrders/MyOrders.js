@@ -2,11 +2,11 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import useAuth from '../../hook/useAuth';
-import './Profile.css'
-import ProfileItem from './ProfileItem';
+import './MyOrders.css'
+import MyOrdersItem from './MyOrdersItem';
 
 
-const Profile = () => {
+const MyOrders = () => {
 const{user}=useAuth()
 const email=user.email
     const [addEvents,setaddEvents]=useState([])
@@ -85,12 +85,12 @@ const handleDelete=id=>{
             <Row xs={1} md={4} className="g-4">
  {
 
-addEvents.map(Events=> <ProfileItem
+addEvents.map(Events=> <MyOrdersItem
 key={Events._id}
 
 Events={Events}
 handleDelete={handleDelete}
-></ProfileItem>)
+></MyOrdersItem>)
 
   } 
 </Row>
@@ -108,4 +108,4 @@ handleDelete={handleDelete}
     );
 };
 
-export default Profile;
+export default MyOrders;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState,useEffect } from 'react';
 import { Table,Button } from 'react-bootstrap';
 
-const Admin = () => {
+const ManageAllOrders = () => {
 
 const [user,setuser]=useState([])
 
@@ -61,7 +61,7 @@ body:JSON.stringify({
 
     return (
         <div>
-            <Table striped bordered hover variant="dark">
+            <Table responsive striped bordered hover variant="dark">
   <thead>
     <tr>
       
@@ -94,4 +94,4 @@ body:JSON.stringify({
     );
 };
 
-export default Admin;
+export default ManageAllOrders;

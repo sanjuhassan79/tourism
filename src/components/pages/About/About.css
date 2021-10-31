@@ -30,3 +30,6 @@
     font-weight: 400;
     margin: 10px 0;
 }
+img.thumbnail {
+    width: 100%;
+}

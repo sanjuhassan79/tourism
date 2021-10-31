@@ -1,6 +1,6 @@
 import React from 'react';
-import './ProfileItem..css'
-const ProfileItem = (props) => {
+import './MyOrdersItem.css'
+const MyOrdersItem = (props) => {
 
     const{travelName,date,img,_id,status}=props.Events
     return (
@@ -23,4 +23,4 @@ const ProfileItem = (props) => {
     );
 };
 
-export default ProfileItem;
+export default MyOrdersItem;

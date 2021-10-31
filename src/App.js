@@ -14,15 +14,19 @@ import Register from './components/pages/Register/Register';
 import NotFound from "./components/pages/NotFound/NotFound";
 import Adventures from "./components/pages/AllAdventures/Adventures";
 import AdventuresBooking from "./components/pages/AllAdventures/AdventuresBooking";
-import Profile from "./components/pages/Profile/Profile";
-import Admin from "./components/pages/Admin/Admin";
+import MyOrders from "./components/pages/MyOrders/MyOrders";
+import ManageAllOrders from "./components/pages/ManageAllOrders/ManageAllOrders";
 import PrivateRoute from "./components/pages/Navbar/PrivateRoute";
+
+
+
 function App() {
   return (
    <AuthProvider>
       <Router>
     <div>
-      <Navbar></Navbar>
+     <Navbar></Navbar> 
+      
       
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
@@ -45,14 +49,14 @@ function App() {
           <PrivateRoute path="/Adventures">
              <Adventures /> 
          </PrivateRoute>
-          <PrivateRoute path="/Profile">
-             <Profile /> 
+          <PrivateRoute path="/MyOrders">
+             <MyOrders/> 
          </PrivateRoute>
          <PrivateRoute path="/AdventuresBooking/:bookingid">
              <AdventuresBooking /> 
           </PrivateRoute>
-         <PrivateRoute path="/Admin">
-             <Admin /> 
+         <PrivateRoute path="/ManageAllOrders">
+             <ManageAllOrders /> 
           </PrivateRoute>
           
          

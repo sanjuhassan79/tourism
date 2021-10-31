@@ -42,3 +42,12 @@
     border-radius: 5px;
     color: white;
 }
+@media (max-width: 540px) {
+  .Nav__res {
+    display: flex;
+    flex-direction: column;
+  }
+  .navLink__res {
+    margin: 15px 0;
+}
+}
