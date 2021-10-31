@@ -81,7 +81,7 @@ const { register, handleSubmit,reset, formState: { errors } } = useForm();
     </div>
 </div>
  <div className="form-group">
-    <label htmlFor="name">Your Photo</label>
+    <label htmlFor="name">Your Url</label>
     <br />
     <div className="input-group">
     <input  id="name"{...register("photo")} placeholder="Enter Your Photo Url"/>
