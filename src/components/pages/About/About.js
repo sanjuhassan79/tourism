@@ -20,7 +20,7 @@ const About = () => {
                             <li><i className="fas fa-hand-point-right might-mar"></i> Ratione voluptatem.</li>
                             <li><i className="fas fa-hand-point-right might-mar"></i> Ratione voluptatem sequi.</li> 
                         </ul>
-                        <button type="button" className="btn btn-outline-warning">Warning</button>
+                        <button type="button" className="btn btn-outline-warning">Find Tours</button>
                     </div>
                 </div>
 
