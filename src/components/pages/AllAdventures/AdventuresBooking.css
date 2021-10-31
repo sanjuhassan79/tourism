@@ -15,13 +15,13 @@
 
   font-weight: 700;
   margin-bottom: 13px;
-  color: #b923e2;
+  color: #600aeb;
 }
 
 .booking__item h5 {
-  font-size: 15px;
+  font-size: 25px;
   font-weight: 500;
-  color: #d33aa0;
+  color: #6b0ce7;
 }
 .overview {
   margin: 53px 0;
@@ -87,4 +87,12 @@
     width: 100%;
     border: none;
     border-radius: 0 5px 5px 0;
+  }
+
+  @media (max-width: 540px) {
+    .booking__item {
+      position: absolute;
+      bottom: 115px;
+      left: 35px;;
+  }
   }
