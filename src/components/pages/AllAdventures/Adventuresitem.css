@@ -60,7 +60,13 @@
     opacity: 0;
     transition: all 0.3s;
   }
-  
+  .hover-5-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+    z-index: 99;
+}
   @media (min-width: 992px) {
     .hover-4-description {
       width: 50%;
